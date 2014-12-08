@@ -1,5 +1,6 @@
 language: java
 
+
 jdk:
    - oraclejdk7
    - oraclejdk8
@@ -7,5 +8,6 @@ jdk:
 script:
  - ./compile.sh
  - ./run.sh
+
 
 archive: true
