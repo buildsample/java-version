@@ -7,3 +7,5 @@ jdk:
 script:
  - ./compile.sh
  - ./run.sh
+
+archive: true
