@@ -10,9 +10,6 @@ script:
  - echo $key1 and $key2
  - ./compile.sh
 # - ./run.sh
- 
-before_install:
- 
  - sudo usermod -G shippable www-data
 # - sudo chmod 0777 $SHIPPABLE_REPO_DIR
 
