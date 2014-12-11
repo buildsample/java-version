@@ -8,7 +8,7 @@ jdk:
 
 script:
  - ./compile.sh
- - ./run.sh
+# - ./run.sh
  
 before_script:
  - echo $key1 and $key2
