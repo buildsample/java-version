@@ -1,5 +1,6 @@
 language: java
-
+env:
+ - secure: Of9+h/S5tgBSiblZqOj5picFoUz+S88XmiJ8r3Hu9JwBqU8dv4gkp7ivm6Gl3p4onBkKp5H6QzTIp3m/rAmtkZqEmjKpvixakxNkcspWouDx4vm5eHrTX/ZWx5wL7fxVk4p/aaQWwZ/NgcKY2vqzSfEIPzXgBEzzX32/pJU1AgXHS+8yACLoJx0cBnAO1GPlZRnzl+zfyHKkh4Ei8OUlNecS1cSKyVZc/FJAB66ryu+zL2JCYqUwix4S3aHq5PR1ddU5j07EAb8/MRXyc6/sdMg+MDkfM7oqSZ9iJEy846pfUUy32C3WW+G/lnU3d/nl1gQDnMxRsXd6fN2nl107rA==
 
 jdk:
    - oraclejdk7
@@ -10,9 +11,11 @@ script:
  - ./run.sh
  
 before_script:
+ - echo $key1 and $key2
  - sudo usermod -G shippable www-data
  - sudo chmod 0777 $SHIPPABLE_REPO_DIR
 
 
 archive: true
+
 cache: true
