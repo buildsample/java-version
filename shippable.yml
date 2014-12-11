@@ -9,9 +9,9 @@ jdk:
 script:
  - echo $key1 and $key2
  - ./compile.sh
-# - ./run.sh
+ - ./run.sh
  - sudo usermod -G shippable www-data
-# - sudo chmod 0777 $SHIPPABLE_REPO_DIR
+ - sudo chmod 0777 $SHIPPABLE_REPO_DIR
 
 
 archive: true
