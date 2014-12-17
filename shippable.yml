@@ -7,7 +7,7 @@ jdk:
    - oraclejdk8
 
 script:
- - echo $key1 and $key2
+# - echo $key1 and $key2
  - ./compile.sh
  - ./run.sh
  - sudo usermod -G shippable www-data
